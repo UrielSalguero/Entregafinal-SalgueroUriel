@@ -1,0 +1,147 @@
+/* Estilos generales */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5dc;
+    color: #5c4033;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header{
+    background-color: #5c4033;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .logo{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav ul li a:hover{
+    text-decoration: underline;
+}
+
+.mini-carrito {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #fff;
+    color: #5c4033;
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.mini-carrito #cantidad-carrito {
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.catalogo{
+    padding: 30px 15px;
+    background-color: #fff8e7;
+    text-align: center;
+    border-top: 5px solid #8b4513;
+}
+
+.productos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.productos div{
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.productos div h3{
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    color: #8b4513;
+    margin-bottom: 10px;
+}
+
+.productos div button{
+    background: #8b4513;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.productos div button:hover{
+    background: #6b3a1a;
+}
+
+.carrito{
+    padding: 30px 15px;
+    background-color: #fff8e7;
+    text-align: center;
+    border-top: 5px solid #8b4513;
+}
+
+.carrito h2{
+    font-family: "Dancing Script", cursive;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #8b4513;
+}
+
+.carrito #vaciar-carrito-js,
+.carrito #checkout-btn{
+    background: #8b4513;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.carrito #vaciar-carrito-js:hover,
+.carrito #checkout-btn:hover{
+    background: #6b3a1a;
+}
+
+.footer{
+    background-color: #5c4033;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+    margin-top: auto;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.2rem;
+}

@@ -1,48 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!--JS-->
-     <script defer src="./main.js"></script>
-     <!--CSS-->
-     <link rel="stylesheet" href="./css/style.css">
-     <!--Fonts-->
-     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <title>Cafeteria</title>
+    <script defer src="./main.js"></script>
+    <script defer src="./js/carrito.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <title>Cafetería J U</title>
 </head>
 <body>
     <header class="header">
-        <div class="logo"></div>
-        <h1>Cafetería J U</h1>
+        <h1 class="logo">Cafetería J U</h1>
         <nav class="nav">
             <ul>
                 <li><a href="#catalogo">Productos</a></li>
                 <li><a href="#carrito">Carrito</a></li>
             </ul>
         </nav>
+        <div class="mini-carrito">
+            <button id="ver-carrito">🛒 Ver Carrito</button>
+            <span id="cantidad-carrito">0</span>
+        </div>
     </header>
 
     <main>
         <section id="catalogo">
             <h2>Productos</h2>
-            <div class="productos-js">
-
-            </div>
+            <input type="text" id="busqueda" placeholder="Buscar productos...">
+            <select id="ordenar">
+                <option value="default">Ordenar por</option>
+                <option value="precio">Precio</option>
+                <option value="popularidad">Popularidad</option>
+                <option value="novedades">Novedades</option>
+            </select>
+            <div class="productos-js"></div>
         </section>
 
-        <section id="Carrito">
+        <section id="carrito">
             <h2>Carrito de compras</h2>
-            <div class="carrito-js">
-
-            </div>
-
-            <button id="vaciar-carrito-js">Vaciar carrito</button>  
+            <div class="carrito-js"></div>
+            <button id="vaciar-carrito-js">Vaciar carrito</button>
+            <button id="checkout-btn">Proceder al checkout</button>
         </section>
     </main>
 
-    <footer>
+    <footer class="footer">
         <p>©2024 Cafetería J U | Síguenos en nuestras redes</p>
     </footer>
 </body>
 </html>
+
+
