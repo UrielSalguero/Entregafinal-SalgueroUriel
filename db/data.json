@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "nombre": "Cafe Espresso",
+        "precio": 950,
+        "imagen": "./img/cafeespresso.png"
+    },
+    {
+        "id": 2,
+        "nombre": "Cafe con leche",
+        "precio": 1050,
+
+        "imagen": "./img/cafeleche.png"
+    },
+    {
+        "id": 3,
+        "nombre": "Cappuccino",
+        "precio": 1100,
+        "imagen": "./img/capu.png"
+    },
+    {
+        "id": 4,
+        "nombre": "Latte de Caramelo Cremoso",
+        "precio": 1250,
+        "imagen": "./img/latte.png"
+    },
+    {
+        "id": 5,
+        "nombre": "Flat White Premium",
+        "precio": 1255,
+        "imagen": "./img/white.png"
+    },
+    {
+        "id": 6,
+        "nombre": "Mocha de Chocolate Amargo",
+        "precio": 1350,
+        "imagen": "./img/moca.png"
+    },
+    {
+        "id": 7,
+        "nombre": "Affogato de Vainilla",
+        "precio": 1375,
+        "imagen": "./img/afogato.png"
+    },
+    {
+        "id": 8,
+        "nombre": "Cold Brew Exótico",
+        "precio": 1255,
+        "imagen": "./img/cold.png"
+    }
+]

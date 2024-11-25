@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--JS-->
     <script defer src="./main.js"></script>
     <script defer src="./js/carrito.js"></script>
+
+    <!--CSS-->
     <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+
     <title>Cafetería J U</title>
 </head>
 <body>
@@ -14,14 +18,9 @@
         <h1 class="logo">Cafetería J U</h1>
         <nav class="nav">
             <ul>
-                <li><a href="#catalogo">Productos</a></li>
-                <li><a href="#carrito">Carrito</a></li>
+                <li><a href="#catalogo">PEDIR</a></li>
             </ul>
         </nav>
-        <div class="mini-carrito">
-            <button id="ver-carrito">🛒 Ver Carrito</button>
-            <span id="cantidad-carrito">0</span>
-        </div>
     </header>
 
     <main>
@@ -31,23 +30,27 @@
             <select id="ordenar">
                 <option value="default">Ordenar por</option>
                 <option value="precio">Precio</option>
-                <option value="popularidad">Popularidad</option>
-                <option value="novedades">Novedades</option>
+                <option value="nombre">Nombre</option>
             </select>
             <div class="productos-js"></div>
         </section>
-
-        <section id="carrito">
-            <h2>Carrito de compras</h2>
-            <div class="carrito-js"></div>
-            <button id="vaciar-carrito-js">Vaciar carrito</button>
-            <button id="checkout-btn">Proceder al checkout</button>
-        </section>
     </main>
+
+    <aside id="carrito-flotante" class="carrito-flotante">
+        <h3>Carrito</h3>
+        <div class="carrito-js"></div>
+        <button id="checkout-btn">Checkout</button>
+        <button id="vaciar-carrito-js">Vaciar carrito</button>
+    </aside>
 
     <footer class="footer">
         <p>©2024 Cafetería J U | Síguenos en nuestras redes</p>
     </footer>
+
+    <!--SweetAlert-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </body>
 </html>
 
