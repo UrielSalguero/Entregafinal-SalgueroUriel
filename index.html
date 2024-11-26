@@ -23,8 +23,8 @@
         </nav>
     </header>
 
-    <main>
-        <section id="catalogo">
+    <main class="contenedor-principal">
+        <section id="catalogo" class="contenedor-productos">
             <h2>Productos</h2>
             <input type="text" id="busqueda" placeholder="Buscar productos...">
             <select id="ordenar">
@@ -34,14 +34,14 @@
             </select>
             <div class="productos-js"></div>
         </section>
+    
+        <aside id="carrito-flotante" class="carrito-flotante">
+            <h3>Carrito</h3>
+            <div class="carrito-js"></div>
+            <button id="comprar">Comprar</button>
+            <button id="vaciar-carrito-js">Vaciar carrito</button>
+        </aside>
     </main>
-
-    <aside id="carrito-flotante" class="carrito-flotante">
-        <h3>Carrito</h3>
-        <div class="carrito-js"></div>
-        <button id="checkout-btn">Checkout</button>
-        <button id="vaciar-carrito-js">Vaciar carrito</button>
-    </aside>
 
     <footer class="footer">
         <p>©2024 Cafetería J U | Síguenos en nuestras redes</p>
