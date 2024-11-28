@@ -30,10 +30,10 @@ function renderCarrito(cartItems) {
         contenedorCarrito.appendChild(totalCard)
     }
     addEliminarEvent()
-    addQuantityEvents()
+    AddCantEvent()
 }
 
-function addQuantityEvents() {
+function AddCantEvent() {
     document.querySelectorAll(".cantidad-btn").forEach(button => {
         button.onclick = (e) => {
             const productId = parseInt(e.currentTarget.id.split('-')[1])

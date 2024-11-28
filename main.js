@@ -25,10 +25,10 @@ function renderProductos(listaProductos) {
                           <button class="productoAgregar" data-id="${producto.id}">Agregar</button>`
         contenedorProductos.appendChild(card)
     })
-    addToCartButton()
+    AgregarCarrito()
 }
 
-function addToCartButton() {
+function AgregarCarrito() {
     const botonesAgregar = document.querySelectorAll(".productoAgregar")
     botonesAgregar.forEach(button => {
         button.onclick = (e) => {
