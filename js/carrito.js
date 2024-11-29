@@ -36,23 +36,24 @@ function renderCarrito(cartItems) {
 function AddCantEvent() {
     document.querySelectorAll(".cantidad-btn").forEach(button => {
         button.onclick = (e) => {
-            const productId = parseInt(e.currentTarget.id.split('-')[1])
-            const product = carrito.find(item => item.id === productId)
-            if (e.currentTarget.id.includes('minus') && product.cantidad > 1) {
-                product.cantidad--
+            const productoId = parseInt(e.currentTarget.id.split('-')[1])
+            const producto = carrito.find(item => item.id === productoId)
+            if (e.currentTarget.id.includes('minus') && producto.cantidad > 1) { 
+                producto.cantidad--
             } else if (e.currentTarget.id.includes('plus')) {
-                product.cantidad++
+                producto.cantidad++
             }
             actualizarCarrito()
         }
     })
 }
 
+
 function addEliminarEvent() {
     document.querySelectorAll(".eliminar").forEach(button => {
         button.onclick = (e) => {
-            const productId = parseInt(e.currentTarget.dataset.id)
-            carrito = carrito.filter(item => item.id !== productId)
+            const productoId = parseInt(e.currentTarget.dataset.id)
+            carrito = carrito.filter(item => item.id !== productoId)
             actualizarCarrito()
         }
     })
@@ -70,7 +71,7 @@ document.getElementById("vaciar-carrito-js").addEventListener("click", () => {
         Swal.fire('Carrito vacío', 'Tu carrito ya esta vacío.', 'info')
     } else {
         Swal.fire({
-            title: '¿Estás seguro?',
+            title: '¿Estas seguro?',
             text: 'Se eliminara todo del carrito.',
             icon: 'warning',
             showCancelButton: true,

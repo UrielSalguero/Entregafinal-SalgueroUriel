@@ -55,19 +55,19 @@ function AgregarCarrito() {
 }
 
 document.getElementById("busqueda").addEventListener("input", (e) => {
-    const searchTerm = e.target.value.toLowerCase()
+    const buscarp = e.target.value.toLowerCase()
     const productosFiltrados = productos.filter(producto =>
-        producto.nombre.toLowerCase().includes(searchTerm)
+        producto.nombre.toLowerCase().includes(buscarp)
     )
     renderProductos(productosFiltrados)
 })
 
 document.getElementById("ordenar").addEventListener("change", (e) => {
-    const sortBy = e.target.value
+    const ordenarprod = e.target.value
     let productosOrdenados
-    if (sortBy === "precio") {
+    if (ordenarprod === "precio") {
         productosOrdenados = [...productos].sort((a, b) => a.precio - b.precio)
-    } else if (sortBy === "nombre") {
+    } else if (ordenarprod === "nombre") {
         productosOrdenados = [...productos].sort((a, b) =>
             a.nombre.localeCompare(b.nombre, undefined, { sensitivity: 'base' })
         )
